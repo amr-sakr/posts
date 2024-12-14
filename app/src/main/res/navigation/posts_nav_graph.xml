@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/posts_nav_graph.xml"
+    app:startDestination="@id/postsFragment">
+
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.example.posts.ui.posts.postsList.PostsFragment"
+        android:label="posts_fragment"
+        tools:layout="@layout/posts_fragment" />
+    <fragment
+        android:id="@+id/createPostBottomSheet"
+        android:name="com.example.posts.ui.posts.createPost.CreatePostFragment"
+        android:label="CreatePostBottomSheet"
+        tools:layout="@layout/create_post_fragment" />
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="com.example.posts.ui.posts.editPost.EditPostFragment"
+        android:label="EditPostFragment"
+        tools:layout="@layout/edit_post_fragment" >
+        <argument
+            android:name="post"
+            app:argType="com.example.posts.data.model.Post" />
+    </fragment>
+</navigation>

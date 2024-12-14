@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Posts</string>
+    <string name="add_post">Add Post</string>
+    <string name="no_posts_available">No Posts Available</string>
+    <string name="post">Post</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="submit">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">Save</string>
 </resources>
